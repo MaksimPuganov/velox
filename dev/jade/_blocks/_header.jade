@@ -1,0 +1,21 @@
+//- header block start
+- var names = ["Services","Portofolio","Testimonials","About","Contact"]
+section.header__block
+    .container
+        .logo.left
+            img(src="img/logo/logo.png", alt="Velox Logo")
+        nav.nav.right
+            ul.nav__list
+                //- - for( var i = 0; i < names.length; i++ )
+                //- - var val = names[i]
+                each val in names
+                    li.nav__item
+                        a.nav__link(href="#!")= val
+        article.article__block
+            h1.title__main
+                | Velox One Page Template
+            p.desc
+                | Clean, Responsive, customizable one page template
+            a.btn(href="!#")
+                | Get Started Now
+//- header block end
